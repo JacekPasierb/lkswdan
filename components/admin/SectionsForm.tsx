@@ -2,15 +2,11 @@
 
 import {useTransition} from "react";
 import {toast} from "sonner";
-import {saveSections} from "@/actions/sections";
+
 import {Button} from "@/components/ui/button";
 import {Input} from "@/components/ui/input";
-import {Label} from "@/components/ui/label";
-
-
-
-
-
+import {saveSections} from "../../actions/sections";
+import { Label } from "../ui/Label";
 
 type SectionsFormProps = {
   initial: SectionsData | null;
@@ -22,7 +18,6 @@ type HeroSection = {
   ctaText: string;
   ctaHref: string;
 };
-
 
 type SectionsData = {
   hero?: HeroSection;
@@ -42,7 +37,6 @@ type SectionsData = {
     text: string;
   };
 };
-
 
 export default function SectionsForm({initial}: SectionsFormProps) {
   const [pending, start] = useTransition();

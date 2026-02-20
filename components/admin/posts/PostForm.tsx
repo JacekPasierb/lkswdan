@@ -5,8 +5,8 @@ import {toast} from "sonner";
 import {savePost} from "@/actions/posts";
 import {Button} from "@/components/ui/button";
 import {Input} from "@/components/ui/input";
-import {Label} from "@/components/ui/label";
-import { PostItem } from "../../../types/post";
+import {Label} from "@/components/ui/Label";
+import {PostItem} from "../../../types/post";
 
 export default function PostForm({
   initial,
