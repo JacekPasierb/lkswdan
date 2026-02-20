@@ -43,11 +43,9 @@ export type SectionsDoc = {
    Mongo client
 ======================== */
 
-const uri = process.env.MONGO_URI;
+const uri = process.env.MONGO_URI!;
 
-if (!uri) {
-  throw new Error("Missing MONGO_URI in env");
-}
+
 
 let client: MongoClient | null = null;
 
