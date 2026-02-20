@@ -6,7 +6,7 @@ import {toast} from "sonner";
 import {Button} from "@/components/ui/button";
 import {Input} from "@/components/ui/input";
 import {saveSections} from "../../actions/sections";
-import { Label } from "../ui/Label";
+import { Label } from "@/components/ui/label";
 
 type SectionsFormProps = {
   initial: SectionsData | null;
